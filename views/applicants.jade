@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  .container
+    h1 Applicants
+
+    ul#apps.list-unstyled
+      for applicant in applications
+        li.list-group-item Name:&#32;
+          a(href="/newapplicant/#{applicant._id}") #{applicant.name}
+        li.list-group-item Bio: #{applicant.bio}
+        li.list-group-item Skills: #{applicant.skills}
+        li.list-group-item Experience: #{applicant.years}
+        li.list-group-item Reason: #{applicant.why}
+        a.btn.btn-default(href="/delete/#{applicant._id}") &laquo; Delete Application &raquo;
+        li &nbsp;

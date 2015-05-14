@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "body-parser": "^1",
+    "express": "^4",
+    "jade": "^1",
+    "jquery": "^2.1.4",
+    "mongoose": "^4.0.2",
+    "node": "0.0.0"
+  }
+}

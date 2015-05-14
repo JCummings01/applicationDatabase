@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  .applicant-container
+    h1 Application for #{info.name}
+    .list-container
+      ul.list-group
+        li.list-group-item Name: #{info.name}
+        li.list-group-item Bio: #{info.bio}
+        li.list-group-item Skills: #{info.skills}
+        li.list-group-item Experience: #{info.years}
+        li.list-group-item Reason: #{info.why}

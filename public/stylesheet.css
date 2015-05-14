@@ -1,0 +1,23 @@
+h1,
+h2,
+body {
+  font: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+}
+a {
+  color: #00B7FF;
+}
+.applicant-container {
+  margin-left: 5%;
+  margin-right: 5%;
+  padding: 0px, 5px, 0px, 5px;
+  border-radius: 5px;
+}
+.list-container {
+  padding: 5px;
+}
+
+h1 {
+  padding-top: 10px;
+  text-align: center;
+}
