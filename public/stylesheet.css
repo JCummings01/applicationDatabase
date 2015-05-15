@@ -16,8 +16,16 @@ a {
 .list-container {
   padding: 5px;
 }
-
 h1 {
   padding-top: 10px;
   text-align: center;
+}
+#delete {
+  background-color: LightCoral;
+}
+#back {
+  background-color: LightBlue;
+}
+#add {
+  background-color: Aquamarine;
 }

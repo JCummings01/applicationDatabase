@@ -14,13 +14,9 @@ app.use(bodyParser());
 
 app.get('/', indexController.index);
 
-app.get('/success', apiController.success);
-// displays a list of applicants
 app.get('/applicants', apiController.applicants);
 app.get('/delete/:applicantId', apiController.deleteApplication);
 app.get('/newApplicant/:userId', apiController.userId);
-  // Here is where you need to get the data
-  // from the post body and store it in the database
 app.post('/addApplication', apiController.addApplication);
 
 var server = app.listen(8441, function() {

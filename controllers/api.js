@@ -1,9 +1,6 @@
 var Application = require('../models/application.js');
 
 var apiController = {
-  success: function(req, res) {
-    res.render('success');
-  },
   applicants: function(req, res) {
     Application.find({}, function(err, apps){
       res.render('applicants', {

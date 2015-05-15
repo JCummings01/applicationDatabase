@@ -4,6 +4,7 @@ block content
   .container
     h1 Applicants
 
+    a.btn.btn-default#add(href="/") Add New Application
     ul#apps.list-unstyled
       for applicant in applications
         li.list-group-item Name:&#32;
@@ -12,5 +13,5 @@ block content
         li.list-group-item Skills: #{applicant.skills}
         li.list-group-item Experience: #{applicant.years}
         li.list-group-item Reason: #{applicant.why}
-        a.btn.btn-default(href="/delete/#{applicant._id}") &laquo; Delete Application &raquo;
+        a.btn.btn-default#delete(href="/delete/#{applicant._id}") &laquo; Delete Application &raquo;
         li &nbsp;
